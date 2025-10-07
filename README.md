@@ -3,6 +3,10 @@
 - In order to install Airflow using docker you can watch our [Airflow Lab1 Tutorial Video](https://youtu.be/exFSeGUbn4Q?feature=shared)
 - For latest step-by-step instructions, check out this blog - [AirFlow Lab-1](https://www.mlwithramin.com/blog/airflow-lab1)
 
+
+### Note: Screenshots of this Airflow lab have been attached at the last of the Readme.md file
+
+
 ### ML Model
 
 This script is designed for data clustering using K-Means clustering and determining the optimal number of clusters using the elbow method. It provides functionality to load data from a CSV file, perform data preprocessing, build and save a K-Means clustering model, and determine the number of clusters based on the elbow method.
@@ -340,7 +344,7 @@ your_airflow_project/
 ```
 
 #### Modified Structure
-
+```plaintext
 ├── assets/                     # Assets and supporting resources
 ├── config/                     # Configuration files
 ├── dags/
@@ -349,7 +353,7 @@ your_airflow_project/
 ├── model/                     # Saved model artifacts
 ├── reports/                   # Generated reports and visualizations
 │   ├── pipeline_report_*.json
-│   └── visual_*.html
+│   └── visual_*.html           #contains the visualisation
 ├── src/                       # Core machine learning logic
 ├── working_data/              # Intermediate data or temporary files
 ├── docker-compose.yaml        # Docker orchestration setup
@@ -357,8 +361,7 @@ your_airflow_project/
 ├── plugins/                   # Airflow plugins (if any)
 ├── requirements.txt           # Python dependencies
 ├── setup.sh                   # Environment setup script
-└── README.md
-
+```
 
 #### Step 2: Docker Compose Configuration
 Create a docker-compose.yaml file in the project root directory. This file defines the services and configurations for running Airflow in a Docker container.
