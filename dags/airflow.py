@@ -46,7 +46,7 @@ with DAG(
         op_args=[data_preprocessing_task.output, "model.sav"],
     )
 
-    # Task 4: Evaluate model (runs in parallel with load_model)
+    # Task to Evaluate model (runs in parallel with load_model)
     evaluate_model_task = PythonOperator(
         task_id='evaluate_model_task',
         python_callable=evaluate_model,
@@ -59,13 +59,13 @@ with DAG(
         python_callable=load_model_elbow,
         op_args=["model.sav", build_save_model_task.output],
     )
-
+    # Task to Visualtize the model
     visual_task = PythonOperator(
         task_id='create_visual',
         python_callable=create_visual_report,
         op_args=["model.sav", build_save_model_task.output],
     )
-
+   #Task to send notification
     notification_task = PythonOperator(
         task_id='send_notification_task',
         python_callable=send_notification,
@@ -78,24 +78,11 @@ with DAG(
     )
 
 
-
     # Set task dependencies
     # load_data_task >> data_preprocessing_task >> build_save_model_task >> load_model_task >> notification_task
 
-    # # Define dependencies
-    # load_data_task >> data_preprocessing_task >> build_save_model_task
-
-    # # Parallel execution
-    # build_save_model_task >> [evaluate_model_task, load_model_task]
-
-    # # Both must complete before notification (NEW)
-    # [evaluate_model_task, load_model_task] >> notification_task       
-
-
-    # Change from:
-    load_data_task >> data_preprocessing_task >> build_save_model_task >> [evaluate_model_task, load_model_task] >> notification_task
     
-    # To:
+    # Changed To:
     load_data_task >> data_preprocessing_task >> build_save_model_task >> [evaluate_model_task, load_model_task, visual_task] >> notification_task  
 
 # If this script is run directly, allow command-line interaction with the DAG
