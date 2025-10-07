@@ -4,7 +4,7 @@
 - For latest step-by-step instructions, check out this blog - [AirFlow Lab-1](https://www.mlwithramin.com/blog/airflow-lab1)
 
 
-### Note: Screenshots of this Airflow lab have been attached at the last of the Readme.md file
+### *Note: Screenshots of this Airflow lab have been attached at the last of the Readme.md file*
 
 
 ### ML Model
