@@ -66,7 +66,15 @@ load_data_task >> data_preprocessing_task >> build_save_model_task >> [evaluate_
 * `send_notification(prediction, sse, eval_metrics)` — Prints a structured completion summary and writes a JSON report to `reports/`.
 
 > Note: Visuals and pipeline summaries are persisted in the `reports/` directory, and five screenshots are attached at the end of this README under the Screenshots section.
+## Airflow Dashboard
 
+![AIRFLOW page](assets/S5.png)
+
+![AIRFLOW page](assets/S2.png)
+
+![AIRFLOW page](assets/S4.png)
+
+![AIRFLOW page](assets/S3.png)
 
 ### ML Model
 
@@ -459,10 +467,3 @@ app-airflow-webserver-1 | 127.0.0.1 - - [17/Feb/2023:09:34:29 +0000] "GET /healt
 
 - Once the DAG completes its execution, check any output or artifacts produced by your functions and tasks. 
 
-![AIRFLOW page](assets/S5.png)
-
-![AIRFLOW page](assets/S2.png)
-
-![AIRFLOW page](assets/S4.png)
-
-![AIRFLOW page](assets/S3.png)
