@@ -1,0 +1,22 @@
+{"timestamp":"2025-10-06T23:47:44.119047Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-06T23:47:44.119429Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/airflow.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-06T23:47:44.671685Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:44.671906Z","level":"info","event":"======================================================================","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:44.672016Z","level":"info","event":"PIPELINE COMPLETION NOTIFICATION","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:44.672113Z","level":"info","event":"======================================================================","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:44.672187Z","level":"info","event":"{","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:44.672248Z","level":"info","event":"  \"pipeline\": \"Credit Card Clustering Analysis\",","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:44.672305Z","level":"info","event":"  \"status\": \"SUCCESS\",","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:44.672610Z","level":"info","event":"  \"timestamp\": \"2025-10-06 23:47:44\",","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:44.672653Z","level":"info","event":"  \"optimal_clusters\": 5,","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:44.672685Z","level":"info","event":"  \"prediction_result\": 5,","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:44.672716Z","level":"info","event":"  \"silhouette_score\": 0.3431572160279554,","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:44.672747Z","level":"info","event":"  \"final_sse\": 4520.653574690553,","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:44.672787Z","level":"info","event":"  \"message\": \"Pipeline completed successfully!\"","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:44.672818Z","level":"info","event":"}","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:44.672849Z","level":"info","event":"======================================================================","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:44.672880Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:44.672932Z","level":"info","event":"Report saved to: /opt/airflow/dags/reports/pipeline_report_20251006_234744.json","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:44.672964Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:44.672380Z","level":"info","event":"Done. Returned value was: {'pipeline': 'Credit Card Clustering Analysis', 'status': 'SUCCESS', 'timestamp': '2025-10-06 23:47:44', 'optimal_clusters': 5, 'prediction_result': 5, 'silhouette_score': 0.3431572160279554, 'final_sse': 4520.653574690553, 'message': 'Pipeline completed successfully!'}","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2025-10-06T23:47:44.672462Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('0199bbec-3e00-7d13-be4b-a6470eb1382e'), task_id='send_notification_task', dag_id='Airflow_Lab1', run_id='manual__2025-10-06T23:47:25.805626+00:00', try_number=1, dag_version_id=UUID('0199bbe9-95d2-73c9-80f0-aa847f25066d'), map_index=-1, hostname='ef71977fa6ce', context_carrier={}, task=<Task(PythonOperator): send_notification_task>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 10, 6, 23, 47, 44, 48564, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1352}

@@ -1,0 +1,14 @@
+{"timestamp":"2025-10-06T23:47:29.994917Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-06T23:47:29.995311Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/airflow.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-06T23:47:31.165912Z","level":"info","event":"✓ k=2, SSE=16416.59","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:32.388188Z","level":"info","event":"✓ k=3, SSE=12721.70","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:33.352988Z","level":"info","event":"✓ k=4, SSE=9853.79","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:34.375419Z","level":"info","event":"✓ k=5, SSE=8218.43","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:35.391257Z","level":"info","event":"✓ k=6, SSE=6852.53","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:36.548843Z","level":"info","event":"✓ k=7, SSE=6096.52","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:37.836655Z","level":"info","event":"✓ k=8, SSE=5461.91","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:39.159137Z","level":"info","event":"✓ k=9, SSE=4905.05","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:40.625902Z","level":"info","event":"✓ k=10, SSE=4520.65","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:40.648455Z","level":"info","event":"✓ Model saved to /opt/airflow/dags/model/model.sav","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:40.627731Z","level":"info","event":"Done. Returned value was: [16416.593573217222, 12721.699051240448, 9853.787201645187, 8218.433430992716, 6852.530606826519, 6096.523799642479, 5461.905960463658, 4905.047524569353, 4520.653574690553]","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2025-10-06T23:47:40.628003Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('0199bbec-3dfd-74ee-9df8-f41d1896b94a'), task_id='build_save_model_task', dag_id='Airflow_Lab1', run_id='manual__2025-10-06T23:47:25.805626+00:00', try_number=1, dag_version_id=UUID('0199bbe9-95d2-73c9-80f0-aa847f25066d'), map_index=-1, hostname='ef71977fa6ce', context_carrier={}, task=<Task(PythonOperator): build_save_model_task>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 10, 6, 23, 47, 29, 912116, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1352}

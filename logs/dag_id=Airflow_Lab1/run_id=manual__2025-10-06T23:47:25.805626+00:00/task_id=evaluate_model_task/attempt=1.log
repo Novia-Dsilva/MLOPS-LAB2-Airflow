@@ -1,0 +1,25 @@
+{"timestamp":"2025-10-06T23:47:41.437869Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-06T23:47:41.438232Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/airflow.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-06T23:47:43.230853Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.231231Z","level":"info","event":"======================================================================","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.231324Z","level":"info","event":"MODEL EVALUATION RESULTS","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.231418Z","level":"info","event":"======================================================================","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.231486Z","level":"info","event":"Number of Clusters: 10","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.231571Z","level":"info","event":"Silhouette Score: 0.3432 (higher is better)","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.231658Z","level":"info","event":"Inertia (SSE): 4520.65","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.231833Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.231900Z","level":"info","event":"Cluster Distribution:","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.231960Z","level":"info","event":"  Cluster 0: 1467 samples (17.0%)","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.232016Z","level":"info","event":"  Cluster 1: 427 samples (4.9%)","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.232085Z","level":"info","event":"  Cluster 2: 3287 samples (38.1%)","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.232142Z","level":"info","event":"  Cluster 3: 369 samples (4.3%)","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.232197Z","level":"info","event":"  Cluster 4: 134 samples (1.6%)","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.232247Z","level":"info","event":"  Cluster 5: 22 samples (0.3%)","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.232298Z","level":"info","event":"  Cluster 6: 80 samples (0.9%)","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.232348Z","level":"info","event":"  Cluster 7: 577 samples (6.7%)","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.232397Z","level":"info","event":"  Cluster 8: 1360 samples (15.7%)","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.232454Z","level":"info","event":"  Cluster 9: 913 samples (10.6%)","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.232503Z","level":"info","event":"======================================================================","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.232552Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:47:43.231171Z","level":"info","event":"Done. Returned value was: {'silhouette_score': 0.3431572160279554, 'inertia': 4520.653574690553, 'n_clusters': 10}","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2025-10-06T23:47:43.231402Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('0199bbec-3dfe-71fc-9745-8caff8447177'), task_id='evaluate_model_task', dag_id='Airflow_Lab1', run_id='manual__2025-10-06T23:47:25.805626+00:00', try_number=1, dag_version_id=UUID('0199bbe9-95d2-73c9-80f0-aa847f25066d'), map_index=-1, hostname='ef71977fa6ce', context_carrier={}, task=<Task(PythonOperator): evaluate_model_task>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 10, 6, 23, 47, 41, 327954, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1352}

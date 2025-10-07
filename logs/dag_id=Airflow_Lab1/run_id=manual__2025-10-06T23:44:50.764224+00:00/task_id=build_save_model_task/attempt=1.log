@@ -1,0 +1,14 @@
+{"timestamp":"2025-10-06T23:44:53.624161Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-10-06T23:44:53.624406Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/airflow.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-10-06T23:44:54.754882Z","level":"info","event":"✓ k=2, SSE=16416.59","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:44:55.953952Z","level":"info","event":"✓ k=3, SSE=12721.70","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:44:56.862019Z","level":"info","event":"✓ k=4, SSE=9853.79","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:44:58.186093Z","level":"info","event":"✓ k=5, SSE=8218.43","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:44:59.350991Z","level":"info","event":"✓ k=6, SSE=6852.53","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:45:00.614989Z","level":"info","event":"✓ k=7, SSE=6096.52","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:45:01.852498Z","level":"info","event":"✓ k=8, SSE=5461.91","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:45:03.216858Z","level":"info","event":"✓ k=9, SSE=4905.05","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:45:04.514357Z","level":"info","event":"✓ k=10, SSE=4520.65","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:45:04.538791Z","level":"info","event":"✓ Model saved to /opt/airflow/dags/model/model.sav","logger":"task.stdout"}
+{"timestamp":"2025-10-06T23:45:04.524951Z","level":"info","event":"Done. Returned value was: [16416.593573217226, 12721.699051240448, 9853.787201645187, 8218.433430992716, 6852.530606826519, 6096.52379964248, 5461.905960463658, 4905.047524569352, 4520.653574690553]","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":218}
+{"timestamp":"2025-10-06T23:45:04.525843Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('0199bbe9-e05f-786a-97d9-a670e3d364b3'), task_id='build_save_model_task', dag_id='Airflow_Lab1', run_id='manual__2025-10-06T23:44:50.764224+00:00', try_number=1, dag_version_id=UUID('0199bbe9-95d2-73c9-80f0-aa847f25066d'), map_index=-1, hostname='ef71977fa6ce', context_carrier={}, task=<Task(PythonOperator): build_save_model_task>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 10, 6, 23, 44, 53, 569757, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1352}

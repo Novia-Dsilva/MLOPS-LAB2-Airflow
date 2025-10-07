@@ -1,0 +1,10 @@
+{
+  "pipeline": "Credit Card Clustering Analysis",
+  "status": "SUCCESS",
+  "timestamp": "2025-10-07 02:05:28",
+  "optimal_clusters": 5,
+  "prediction_result": 5,
+  "silhouette_score": 0.3431572160279554,
+  "final_sse": 4520.653574690554,
+  "message": "Pipeline completed successfully!"
+}

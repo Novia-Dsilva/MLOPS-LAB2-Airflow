@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html><head><title>Clustering Report</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+body{font-family:Arial;margin:40px;background:#f5f5f5}
+.card{background:white;padding:30px;border-radius:10px;margin:20px 0;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
+h1{color:#2c3e50;text-align:center}
+canvas{max-height:300px}
+table{width:100%;border-collapse:collapse;margin:20px 0}
+th,td{padding:12px;text-align:left;border-bottom:1px solid #ddd}
+th{background:#3498db;color:white}
+</style></head><body>
+<h1>Credit Card Clustering Analysis</h1>
+<h3 style="text-align:center;color:#34495e">Novia Dsilva (MLOPS Lab1)</h3>
+<p style="text-align:center;color:#666">2025-10-07 02:05:26</p>
+
+<div class="card">
+<h2>Elbow Method - Optimal Clusters</h2>
+<canvas id="elbowChart"></canvas>
+</div>
+
+<div class="card">
+<h2>Cluster Distribution</h2>
+<canvas id="clusterChart"></canvas>
+</div>
+
+<div class="card">
+<h2>Cluster Characteristics</h2>
+<table><tr><th>Cluster</th><th>Size</th><th>Avg Balance</th><th>Avg Purchases</th><th>Avg Credit</th></tr><tr><td>Cluster 0</td><td>1467</td><td>$1,910</td><td>$335</td><td>$2,774</td></tr><tr><td>Cluster 1</td><td>427</td><td>$6,818</td><td>$1,071</td><td>$10,670</td></tr><tr><td>Cluster 2</td><td>3287</td><td>$437</td><td>$477</td><td>$1,688</td></tr><tr><td>Cluster 3</td><td>369</td><td>$710</td><td>$1,512</td><td>$12,455</td></tr><tr><td>Cluster 4</td><td>134</td><td>$3,444</td><td>$9,472</td><td>$10,266</td></tr><tr><td>Cluster 5</td><td>22</td><td>$5,729</td><td>$28,601</td><td>$16,114</td></tr><tr><td>Cluster 6</td><td>80</td><td>$11,493</td><td>$2,390</td><td>$15,772</td></tr><tr><td>Cluster 7</td><td>577</td><td>$1,293</td><td>$3,757</td><td>$5,365</td></tr><tr><td>Cluster 8</td><td>1360</td><td>$431</td><td>$691</td><td>$5,902</td></tr><tr><td>Cluster 9</td><td>913</td><td>$3,916</td><td>$638</td><td>$6,757</td></tr></table></div>
+
+<script>
+new Chart(document.getElementById('elbowChart'),{
+  type:'line',
+  data:{labels:[2,3,4,5,6,7,8,9,10],
+        datasets:[{label:'SSE',data:[16416.593573217226,12721.699051240448,9853.787201645187,8218.433430992718,6852.530606826519,6096.52379964248,5461.905960463657,4905.047524569352,4520.653574690554],
+                   borderColor:'#e74c3c',backgroundColor:'rgba(231,76,60,0.1)',tension:0.3}]},
+  options:{responsive:true,plugins:{title:{display:true,text:'SSE vs Number of Clusters'}}}
+});
+
+new Chart(document.getElementById('clusterChart'),{
+  type:'bar',
+  data:{labels:['Cluster 0','Cluster 1','Cluster 2','Cluster 3','Cluster 4','Cluster 5','Cluster 6','Cluster 7','Cluster 8','Cluster 9'],
+        datasets:[{label:'Customers',data:[1467,427,3287,369,134,22,80,577,1360,913],
+                   backgroundColor:['#3498db','#2ecc71','#f39c12','#9b59b6','#e74c3c','#1abc9c']}]},
+  options:{responsive:true,plugins:{title:{display:true,text:'Customer Distribution'}}}
+});
+</script></body></html>
